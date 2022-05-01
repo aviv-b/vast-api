@@ -13,6 +13,10 @@ Backend api test project using FastApi & sqlite
 ## Build 
 Use Docker-Compose to spin up containers `docker-compose up`
 
+## Notes
+1. All client checks has done on 'username' field only.
+2. You can aplay the same logic on 'sdk_version' field.
+
 ## Main route
 Main api url: `localhost:8000`
 
