@@ -14,10 +14,10 @@ Backend api test project using FastApi & sqlite
 Use Docker-Compose to spin up containers `docker-compose up`
 
 ## Main route
-Main api url: http://127.0.0.1:8000
+Main api url: `localhost:8000`
 
 ## Documentation
-Documentation url:  http://127.0.0.1:8000/docs
+Documentation url:  `localhost:8000/docs`
 
 
 
