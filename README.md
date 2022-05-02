@@ -2,6 +2,14 @@
 
 Backend api test project using FastApi & sqlite 
 
+## Tech Stack 
+ - Framework: FastApi 
+ - DB: SQLite
+ - ORM: SQLAlchmey
+ - Async Request: HttpX 
+ - Docker
+ - Docker-compose
+
 ## Structure
 - main.py - main app 
 - config.py - contain external api url and extra configuration variables.
