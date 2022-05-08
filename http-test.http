@@ -1,0 +1,44 @@
+### VS code rest client test tool 
+
+@host = http://localhost:8000
+
+### GetADS - Wrong method
+get {{host}}/getads 
+
+### GetADS - Without params 
+post {{host}}/getads/ 
+Content-Type: application/json
+
+[]
+
+### GetADS - Working
+post {{host}}/getads/ 
+Content-Type: application/json
+
+{
+  "username": "aviv"
+}
+
+
+####################
+### Impression 
+####################
+
+### GetADS - Wrong method
+get {{host}}/impression 
+
+### GetADS - working
+post {{host}}/impression/ 
+Content-Type: application/json
+
+{
+  "username": "aviv"
+}
+
+### GetADS - user not found 
+post {{host}}/impression/ 
+Content-Type: application/json
+
+{
+  "username": "asdasdddadas"
+}

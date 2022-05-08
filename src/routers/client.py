@@ -40,7 +40,7 @@ def get_impression(request: schemas.Client, db: Session = Depends(get_db)):
                 first()
         # add
         if client is None:
-            new = models.Client(username = request.username , impression = 1 )
+            new = models.Client(username = request.username , impressions = 1 )
             db.add(new)
             db.commit()     
             return {"added"}
