@@ -56,8 +56,8 @@ def get_impression(request: schemas.Client, db: Session = Depends(get_db)):
 @router.get("/getstats/{username}")
 def get_stats( username:str ,db: Session = Depends(get_db)):
     client = db.query(models.Client).\
-        filter(models.Client.username == username).\
-        first()
+            filter(models.Client.username == username).\
+            first()
     # calculate fill_rate to avoid divide by zero error
     if client is not None:
         fill_rate = 0 
