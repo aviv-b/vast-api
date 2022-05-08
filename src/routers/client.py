@@ -67,6 +67,8 @@ def get_stats( username:str ,db: Session = Depends(get_db)):
                 "impression":client.impressions,
                 "ads":client.ads, 
                 "fill_rate": fill_rate}
+    return {"username not found"}
+
 
 @router.get("/all",)
 def get_all_data( db: Session = Depends(get_db)):

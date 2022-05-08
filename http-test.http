@@ -2,16 +2,21 @@
 
 @host = http://localhost:8000
 
-### GetADS - Wrong method
+####################
+### GetADS 
+####################
+
+
+### Wrong method
 get {{host}}/getads 
 
-### GetADS - Without params 
+### Without params 
 post {{host}}/getads/ 
 Content-Type: application/json
 
 []
 
-### GetADS - Working
+### Working
 post {{host}}/getads/ 
 Content-Type: application/json
 
@@ -24,10 +29,19 @@ Content-Type: application/json
 ### Impression 
 ####################
 
-### GetADS - Wrong method
+###  Wrong method
 get {{host}}/impression 
 
-### GetADS - working
+
+### User not found 
+post {{host}}/impression/ 
+Content-Type: application/json
+
+{
+  "username": "asdasdddadas"
+}
+
+### Working
 post {{host}}/impression/ 
 Content-Type: application/json
 
@@ -35,10 +49,21 @@ Content-Type: application/json
   "username": "aviv"
 }
 
-### GetADS - user not found 
-post {{host}}/impression/ 
-Content-Type: application/json
+####################
+### GetStats
+####################
 
-{
-  "username": "asdasdddadas"
-}
+
+### User not found 
+get  {{host}}/getstats/aviv 
+
+
+### Working
+get  {{host}}/getstats/aaaaa 
+
+
+####################
+### All
+####################
+
+get  {{host}}/all
