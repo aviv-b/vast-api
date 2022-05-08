@@ -35,7 +35,6 @@ async def get_ads( request: schemas.Client , db: Session = Depends(get_db)):
 
 @router.post("/impression")
 def get_impression(request: schemas.Client, db: Session = Depends(get_db)):
-    
         client = db.query(models.Client).\
                 filter(models.Client.username == request.username ).\
                 first()

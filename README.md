@@ -1,6 +1,6 @@
-# Vast-api 
+# Vast-API 
 
-Backend api test project using FastApi & sqlite 
+Backend api as project assignment. 
 
 ### Tech Stack 
  - Framework: FastApi 
